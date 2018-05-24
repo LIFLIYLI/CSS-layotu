@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-hans">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS布局介绍</title>
+</head>
+<link rel="stylesheet" href="./css/style.css">
+<script src="//at.alicdn.com/t/font_680545_rs6bkx76df9r7ldi.js
+"></script>
+<body>
+    <nav>
+        <span>关于CSS</span>
+        <a href="#"><svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-tianmaoT"></use>
+            </svg></a>
+    </nav>
+    <img src="./tu/888.jpg">
+    <div class="clearfix">
+            <div class="wenzi">请看下文</div>
+        <div class="zuoyou">
+            <h2>一：CSS的左右布局</h2>
+            <p>第一步，给所有需要左右布局的子元素加上flont:left属性。其中的left可以改成right,left就排列在左边，right排在右边。第二步，给他们父级元素添加一个class=clearfix;</p>
+        </div>
+        <div class="zuozhongyou">
+            <h2>二：左中右布局</h2>
+            <p>其实同理可得，先让两个元素做左右布局，然后把第三个和上两个一起又做一个左右布局，不就成了左中右3个横向排列了吗。</p>
+        </div>
+        <div class="shuipingjuzhong">
+            <h2>三：水平居中</h2>
+            <p>在所需要设置水平居中的元素内添加一项text-align:center;</p>
+        </div>
+    </div>
+        <div class="chuizhijuzhong">
+            <h2>四：垂直居中</h2>
+            <p>在需设置垂直居中的元素里添加line-height: xxxpx;添加行高的像素，且行高像素和要和所在块级元素的高度一致。</p>
+        </div> 
+        <h2>五：小技巧</h2>   
+    <main class="kuaiji">        
+            <dl class="clearfix">
+                <dt>消除表格样式</dt>
+                <dd>添加CSS属性：style="list-style:none;"</dd>
+                <dt>消除a标签中的下滑线</dt>
+                <dd>添加属性：text-decoration:none;</dd>
+                <dt>调节元素间距及页边距</dt>
+                <dd>元素间距margin;页边距padding。</dd>
+                <dt>脱离文档流</dt>
+                <dd>添加position:fixed; top:0; left:0;</dd>
+                <dt>块级元素居中</dt>
+                <dd>margin-left: auto;
+                    margin-right: auto;</dd>                
+            </ul>
+    </main>
+    <h2>六：注意事项</h2>
+    <div class="zhuyi">
+        <p>1：发现无论怎么调CSS，都不会出现效果，可能原因有：是否关联了CSS，或者是CSS的路径是否正确；路径一定要正确。</p></br>
+        <p>2：如果存在浮动的元素，必须在浮动元素的父级元素上添加class="clearfix"，否者可能会与其他块级元素不分离。</p></br>
+        <p>3：如果出现改动了子元素的边距，可能出现父级元素不能包含子元素，那么在子元素上添加一个属性display:block;即可。</p></br>
+        <p>4：内联元素属性更改添加一个display:inline-block;</p>
+    </div>
+    <div class="xiazai">
+        <a  href="#" download="#" target="_blank">下载此篇没什么用的文章</a>
+    </div>
+</body>
+</html>
