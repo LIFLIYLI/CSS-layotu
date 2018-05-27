@@ -18,6 +18,24 @@ nav{
     font-weight: bold;
     text-align:center;
 }
+nav>span{
+    border-bottom: 4px solid transparent;
+}
+nav>span:hover{
+    border-bottom: 4px solid cornflowerblue; 
+}
+
+nav>a>svg{
+    padding: 10px 10px;
+    background: transparent;
+    border-radius: 50%;
+    border: 1px solid transparent;
+}
+nav>a>svg:hover{
+    padding: 10px 10px;
+    background: #E6686A;
+    border-radius: 50%;
+}
 
 .icon {
     width: 1em; height: 1em;
